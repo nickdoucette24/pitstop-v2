@@ -1,0 +1,53 @@
+// 🌎 Global CSS Variables (Used for dynamic theming)
+:root {
+  --primary-color: #ff1e00;
+  --secondary-color: #141414;
+  --background-light: #f8f9fa;
+  --background-dark: #1b1b1b;
+  --text-light: #ffffff;
+  --text-dark: #0d0d0d;
+  --accent-color: #fdb813;
+}
+
+// 🎨 SCSS Variables (For static values)
+$primary-color: #ff1e00; // Ferrari Red
+$secondary-color: #141414; // Dark Theme Background
+$accent-color: #fdb813; // Highlight Color
+$neutral-light: #f8f9fa; // Light Mode Background
+$neutral-dark: #1b1b1b; // Dark Mode Background
+$text-light: #ffffff;
+$text-dark: #0d0d0d;
+
+// 🔤 Typography
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Roboto", sans-serif;
+$font-size-base: 1rem;
+$font-size-sm: 14px;
+$font-size-lg: 18px;
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// 📱 Breakpoints (For Responsive Design)
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 1024px;
+$breakpoint-lg: 1280px;
+$breakpoint-xl: 1440px;
+
+// 🎨 Box Shadows
+$box-shadow-light: 0px 4px 6px rgba(0, 0, 0, 0.1);
+$box-shadow-dark: 0px 4px 10px rgba(255, 255, 255, 0.1);
+
+// 🌗 Theme Maps for Dark Mode & Light Mode
+$dark-mode: (
+  "background": $neutral-dark,
+  "text": $text-light,
+  "primary": $primary-color,
+);
+
+$light-mode: (
+  "background": $neutral-light,
+  "text": $text-dark,
+  "primary": $primary-color,
+);

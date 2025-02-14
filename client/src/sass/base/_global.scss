@@ -1,0 +1,68 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
+@import "../themes/dark";
+@import "../themes/light";
+
+body {
+  font-family: $font-primary;
+  font-size: $font-size-base;
+  background-color: var(--background);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// Layout Container
+// .app-container {
+//   display: flex;
+//   min-height: 100vh;
+//   background-color: var(--background);
+//   transition: background-color 0.3s ease-in-out;
+// }
+
+// Main Content Wrapper
+// .content {
+//   flex: 1;
+//   display: flex;
+//   flex-direction: column;
+//   padding: $spacing-md;
+// }
+
+// Links
+// a {
+//   color: var(--primary-color);
+//   text-decoration: none;
+//   transition: color 0.3s ease;
+
+//   &:hover {
+//     color: darken($primary-color, 10%);
+//   }
+// }
+
+// Buttons
+// button {
+//   font-family: inherit;
+//   cursor: pointer;
+//   border: none;
+//   outline: none;
+// }
+
+// Images
+// img {
+//   max-width: 100%;
+//   height: auto;
+//   display: block;
+// }
+
+// Dark Mode
+.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+// Light Mode
+.light-mode {
+  background-color: var(--background-light);
+  color: var(--text-dark);
+}

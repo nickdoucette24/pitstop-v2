@@ -1,0 +1,26 @@
+@import "../abstracts/variables";
+
+.light-mode {
+  --background: var(--background-light);
+  --text: var(--text-dark);
+  --primary-color: var(--primary-color);
+  --secondary-color: #ffffff;
+  --accent-color: var(--accent-color);
+
+  background-color: var(--background);
+  color: var(--text);
+
+  //   .button {
+  //     background-color: var(--primary-color);
+  //     color: var(--text);
+
+  //     &:hover {
+  //       background-color: lighten($primary-color, 10%);
+  //     }
+  //   }
+
+  //   .card {
+  //     background-color: var(--secondary-color);
+  //     box-shadow: $box-shadow-light;
+  //   }
+}

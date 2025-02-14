@@ -1,0 +1,100 @@
+@import "../abstracts/variables";
+
+// Base Font Styles
+body {
+  font-family: $font-primary;
+  font-size: $font-size-base;
+  //   line-height: 1.6;
+  color: var(--text);
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+  //   font-weight: $font-weight-bold;
+  //   margin-bottom: $spacing-sm;
+  //   line-height: 1.2;
+}
+
+// Specific Heading Styles
+h1 {
+  font-size: 2.5rem;
+
+  @include respond-to(md) {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+
+  @include respond-to(md) {
+    font-size: 1.75rem;
+  }
+}
+
+h3 {
+  font-size: 1.75rem;
+
+  @include respond-to(md) {
+    font-size: 1.5rem;
+  }
+}
+
+h4 {
+  font-size: 1.5rem;
+
+  @include respond-to(md) {
+    font-size: 1.25rem;
+  }
+}
+
+h5 {
+  font-size: 1.25rem;
+
+  @include respond-to(md) {
+    font-size: 1.1rem;
+  }
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: $font-weight-regular;
+}
+
+// Paragraphs
+p {
+  font-size: $font-size-base;
+  //   margin-bottom: $spacing-sm;
+}
+
+// Strong/Bold Text
+strong {
+  font-weight: $font-weight-bold;
+}
+
+// Italics
+// em {
+//   font-style: italic;
+// }
+
+// Blockquotes
+// blockquote {
+//   font-style: italic;
+//   padding: $spacing-sm $spacing-md;
+//   border-left: 4px solid var(--primary-color);
+//   background: lighten(var(--background), 5%);
+// }
+
+// Code Blocks
+// code {
+//   font-family: monospace;
+//   background: lighten(var(--background), 10%);
+//   padding: $spacing-xs $spacing-sm;
+//   border-radius: 4px;
+// }

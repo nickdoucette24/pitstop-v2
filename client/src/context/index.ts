@@ -1,2 +1,3 @@
 // ! Exports all contexts
-export { ThemeProvider, useTheme } from "./ThemeContext";
+export { ThemeProvider } from "./ThemeContext";
+export { useTheme } from "../hooks/useTheme";

@@ -1,0 +1,48 @@
+// Reset all margins, paddings, and default styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Remove default list styles
+ul {
+  list-style: none;
+}
+
+// Remove default button and input styles
+button,
+input,
+textarea {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+// Remove default anchor styles
+// a {
+//   text-decoration: none;
+//   color: inherit;
+// }
+
+// Ensure full viewport height for body and HTML
+html,
+body {
+  height: 100%;
+}
+
+// Prevent text selection on buttons for better UX
+button {
+  user-select: none;
+}
+
+// Set smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+// Prevent image dragging
+img {
+  user-select: none;
+  pointer-events: none;
+}
