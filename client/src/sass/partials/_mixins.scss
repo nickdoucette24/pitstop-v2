@@ -1,0 +1,65 @@
+@import "./variables";
+
+// 📱 Responsive Breakpoints
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: $breakpoint-xs) {
+      @content;
+    }
+  } @else if $breakpoint == sm {
+    @media (max-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $breakpoint == md {
+    @media (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $breakpoint == lg {
+    @media (max-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $breakpoint == xl {
+    @media (max-width: $breakpoint-xl) {
+      @content;
+    }
+  }
+}
+
+// 🎨 Theming Mixin (Switch Between Light/Dark Mode)
+@mixin themed($property, $key) {
+  #{$property}: map-get($light-mode, $key);
+
+  .dark-mode & {
+    #{$property}: map-get($dark-mode, $key);
+  }
+}
+
+// 🔄 Flexbox Mixin
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// 🔲 Box Shadow Mixin
+@mixin box-shadow($type: light) {
+  @if $type == light {
+    box-shadow: $box-shadow-light;
+  } @else {
+    box-shadow: $box-shadow-dark;
+  }
+}
+
+// 🏎️ Button Mixin
+@mixin button($bg-color: $primary-color, $text-color: $text-light) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $spacing-md $spacing-lg;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
