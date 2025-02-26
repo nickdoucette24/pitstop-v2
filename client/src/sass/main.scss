@@ -10,17 +10,15 @@
 // Layouts
 @import "./layouts/SideNav";
 
-// Components
-@import "./components/button";
-@import "./components/card";
-@import "./components/graph";
-@import "./components/table";
-
-// Pages
-@import "./pages/HomeDashboard";
-@import "./pages/LandingPage";
-@import "./pages/NotFoundPage";
-
 // Themes
 @import "./themes/light";
 @import "./themes/dark";
+
+// // Components
+// @import "./components/common/Button";
+// @import "./components/common/Input";
+
+// // Pages
+// @import "./pages/HomeDashboard";
+// @import "./pages/LandingPage";
+// @import "./pages/NotFoundPage";
