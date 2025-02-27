@@ -1,0 +1,75 @@
+:root {
+  /* Default colors */
+  --team-color-primary: #ffffff; /* Default (white) */
+  --team-color-secondary: #000000; /* Default (black) */
+}
+
+.team--mercedes {
+  --team-color-primary: #00d2be; /* Primary: Teal */
+  --team-color-secondary: #101010; /* Secondary: Dark Gray */
+  --team-color-tertiary: #ffffff; /* Tertiary: White */
+  --team-color-quaternary: #e5e5e5; /* Quaternary: Light Gray */
+}
+
+.team--redbull {
+  --team-color-primary: #030e4d; /* Primary: Blue */
+  --team-color-secondary: #1e41ff; /* Secondary: Yellow */
+  --team-color-tertiary: #d01a21; /* Tertiary: Red */
+  --team-color-quaternary: #f7bd00; /* Quaternary: Dark Gray */
+}
+
+.team--ferrari {
+  --team-color-primary: #dc0000; /* Primary: Red */
+  --team-color-secondary: #ffffff; /* Secondary: White */
+  --team-color-tertiary: #000000; /* Tertiary: Black */
+  --team-color-quaternary: #ffed00; /* Quaternary: Yellow */
+}
+
+.team--mclaren {
+  --team-color-primary: #ff8001; /* Primary: Papaya Orange */
+  --team-color-secondary: #ffffff; /* Secondary: White */
+  --team-color-tertiary: #00a3e0; /* Tertiary: Blue */
+  --team-color-quaternary: #4a4a4a; /* Quaternary: Dark Gray */
+}
+
+.team--astonmartin {
+  --team-color-primary: #229971; /* Primary: British Racing Green */
+  --team-color-secondary: #ffffff; /* Secondary: White */
+  --team-color-tertiary: #ffed00; /* Tertiary: Yellow */
+  --team-color-quaternary: #4a4a4a; /* Quaternary: Dark Gray */
+}
+
+.team--alpine {
+  --team-color-primary: #0093cc; /* Primary: Blue */
+  --team-color-secondary: #ffffff; /* Secondary: White */
+  --team-color-tertiary: #e40046; /* Tertiary: Red */
+  --team-color-quaternary: #4a4a4a; /* Quaternary: Dark Gray */
+}
+
+.team--vcarb {
+  --team-color-primary: #4a4a4a; /* Primary: Dark Gray */
+  --team-color-secondary: #ffffff; /* Secondary: White */
+  --team-color-tertiary: #00293f; /* Tertiary: Navy Blue */
+  --team-color-quaternary: #d2d2d2; /* Quaternary: Light Gray */
+}
+
+.team--kicksauber {
+  --team-color-primary: #900000; /* Primary: Dark Red */
+  --team-color-secondary: #ffffff; /* Secondary: White */
+  --team-color-tertiary: #000000; /* Tertiary: Black */
+  --team-color-quaternary: #4a4a4a; /* Quaternary: Dark Gray */
+}
+
+.team--haas {
+  --team-color-primary: #ffffff; /* Primary: White */
+  --team-color-secondary: #000000; /* Secondary: Black */
+  --team-color-tertiary: #e10600; /* Tertiary: Red */
+  --team-color-quaternary: #4a4a4a; /* Quaternary: Dark Gray */
+}
+
+.team--williams {
+  --team-color-primary: #005aff; /* Primary: Blue */
+  --team-color-secondary: #ffffff; /* Secondary: White */
+  --team-color-tertiary: #f5f5f5; /* Tertiary: Light Gray */
+  --team-color-quaternary: #4a4a4a; /* Quaternary: Dark Gray */
+}
