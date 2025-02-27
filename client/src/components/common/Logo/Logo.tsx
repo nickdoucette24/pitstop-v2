@@ -1,9 +1,8 @@
-import React from "react";
+import logoImg from "../../../assets/images/pitstop_logo.png";
+import styles from "./Logo.module.scss";
 
-type Props = {};
-
-const Logo = (props: Props) => {
-  return <div>Logo</div>;
+const Logo = () => {
+  return <img className={styles["logo"]} src={logoImg} alt="pitstop logo" />;
 };
 
 export default Logo;

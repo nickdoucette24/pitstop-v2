@@ -16,8 +16,20 @@ const Header = () => {
   };
 
   return (
-    <header>
-      <div className={styles["header__content"]} role="banner">
+    <header className={styles["header"]} role="banner">
+      <div className={styles["header__content"]}>
+        <button
+          className={styles["header__mobileMenu"]}
+          onClick={toggleMobileMenu}
+          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMobileMenuOpen}
+          aria-controls="mobile-menu"
+        >
+          {isMobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+        </button>
+        {isMobileMenuOpen && (
+          <MobileMenu closeMenu={toggleMobileMenu} id="mobile-menu" />
+        )}
         <Link to="/" className={styles["header__logo"]} aria-label="Home">
           <Logo />
         </Link>
@@ -32,18 +44,6 @@ const Header = () => {
           <DarkModeToggle aria-label="Toggle dark mode" />
           <AuthButtons />
         </div>
-        <button
-          className={styles["header__mobileMenu"]}
-          onClick={toggleMobileMenu}
-          aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={isMobileMenuOpen}
-          aria-controls="mobile-menu"
-        >
-          {isMobileMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-        </button>
-        {isMobileMenuOpen && (
-          <MobileMenu closeMenu={toggleMobileMenu} id="mobile-menu" />
-        )}
       </div>
     </header>
   );

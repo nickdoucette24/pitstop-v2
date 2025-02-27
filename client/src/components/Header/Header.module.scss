@@ -1,4 +1,37 @@
-.text {
-  color: var(--team-color-primary);
-  background-color: var(--team-color-secondary);
+@use "../../sass/partials/mixins" as *;
+
+.header {
+  @include flex-center;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__mobileMenu {
+    @include respond-to(md) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    width: 8rem;
+    @include flex-center;
+  }
+
+  &__nav {
+    display: none;
+
+    @include respond-to(md) {
+      @include flex-center;
+    }
+  }
+
+  &__actions {
+    display: none;
+
+    @include respond-to(sm) {
+      @include flex-center;
+    }
+  }
 }
